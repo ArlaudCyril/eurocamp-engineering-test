@@ -69,6 +69,7 @@ export class HttpClient {
       } catch (error) {
         const mappedError = this.mapError(error);
 
+        // Only transient upstream failures should be retried.
         if (this.shouldRetry(mappedError, attempt)) {
           await sleep(this.retryDelayMs * 2 ** attempt);
           attempt += 1;

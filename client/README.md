@@ -22,11 +22,11 @@ All of these values can be overridden when instantiating `EurocampClient`.
 
 From the repository root:
 
-1. `npm install`
-2. `docker-compose up -d --force-recreate`
-3. `docker exec -it engineering-test_eurocamp-api_1 npm run seed:run`
+1. `npm install --force`
+2. `docker compose up -d --force-recreate`
+3. `docker exec engineering-test-eurocamp-api-1 npm run seed:run`
 
-If your Docker container name differs, check it with `docker ps`.
+If your Docker container name differs, check it with `docker compose ps`.
 
 ## Run the client checks
 

@@ -44,6 +44,7 @@ export class BaseEntityService<TEntity, TCreateInput> {
 
   async create(payload: TCreateInput): Promise<TEntity> {
     const entity = await this.httpClient.post<TEntity>(this.resourcePath, payload);
+    // A write can make cached list/detail reads stale, so clear this entity namespace.
     this.cache.clearByPrefix(this.resourcePath);
     return entity;
   }
