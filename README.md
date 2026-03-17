@@ -76,6 +76,23 @@ An example of a test(s) is expected.
 
 Using your favourite frontend framework please interact with the API and handle potential API failures.
 
+## My Backend Submission
+
+Task 1 and Task 2 notes are in `NOTES.md`.
+
+My Task 3 backend client is in `client/`.
+
+### How to run it
+
+From the repository root:
+
+1. `npm install --force`
+2. `docker compose up -d --force-recreate`
+3. `docker exec engineering-test-eurocamp-api-1 npm run seed:run`
+4. `npm run client:check`
+5. `npm run client:test`
+6. `npm run client:demo`
+
 
 # Thanking you
 Please understand we don't expect you too spend too much time on this. We're happy to review whatever you finish at engineering@eurocamp.co.uk

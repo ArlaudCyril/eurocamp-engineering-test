@@ -10,6 +10,9 @@
     "seed:run": "nx run engineering:seedrun",
     "test:api": "nx run engineering:test",
     "test:api:watch": "nx run engineering:test --watch",
+    "client:test": "jest --config client/jest.config.js --runInBand",
+    "client:check": "tsc --project client/tsconfig.json --noEmit",
+    "client:demo": "ts-node --project client/tsconfig.json client/src/demo.ts",
     "typeorm-build-config": "tsc apps/engineering/typeorm.config.ts --outDir ./dist",
     "typeorm-generate-migrations": "npm run typeorm-build-config && typeorm -d dist/typeorm.config.js migration:generate",
     "typeorm-run-migrations": "npm run typeorm-build-config && typeorm -d dist/typeorm.config.js migration:run"

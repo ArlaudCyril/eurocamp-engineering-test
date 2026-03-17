@@ -9,3 +9,5 @@ Dockerfile.dev.postgres
 .github
 .lsp
 .vscode
+node_modules
+dist

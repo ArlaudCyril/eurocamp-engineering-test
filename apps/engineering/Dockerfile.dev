@@ -1,6 +1,6 @@
-FROM node:lts-gallium
+FROM node:18-bullseye
 
-RUN apt-get update -y && npm install -g nx && npm install -g @nrwl/cli
+RUN npm install -g nx @nrwl/cli
 
 COPY --chown=node:node . /usr/src/app
 

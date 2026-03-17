@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2019",
+    "rootDir": ".",
+    "outDir": "../dist/client",
+    "types": ["node", "jest"],
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"]
+}
