@@ -76,11 +76,13 @@ An example of a test(s) is expected.
 
 Using your favourite frontend framework please interact with the API and handle potential API failures.
 
-## My Backend Submission
+## My Submission
 
 Task 1 and Task 2 notes are in `NOTES.md`.
 
 My Task 3 backend client is in `client/`.
+
+My Task 3 frontend app is in `frontend/`.
 
 ### How to run it
 
@@ -92,6 +94,11 @@ From the repository root:
 4. `npm run client:check`
 5. `npm run client:test`
 6. `npm run client:demo`
+7. `npm run frontend:check`
+8. `npm run frontend:test`
+9. `npm run frontend:dev`
+
+Then open `http://localhost:4173`.
 
 
 # Thanking you
